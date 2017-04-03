@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>protobuf</id>
+		<version>$version$</version>
+		<authors>Google</authors>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Protobuf with custom nuspec</description>
+	</metadata>
+
+	<files>
+		<file src="protobuf.targets" target="build\native\" />
+		<file src="protobuf-distro\release\include\**\*" target="build\native\include\" />
+		<file src="protobuf-distro\release\lib\**\*" target="lib\native\release\" />
+		<file src="protobuf-distro\debug\lib\**\*" target="lib\native\debug\" />
+		<file src="protobuf-distro\release\bin\**\*" target="tools\release\" />
+		<file src="protobuf-distro\debug\bin\**\*" target="tools\debug\" />
+	</files>
+</package>
