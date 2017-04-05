@@ -15,5 +15,6 @@
 		<file src="protobuf-distro\debug\lib\**\*" target="lib\native\debug\" />
 		<file src="protobuf-distro\release\bin\**\*" target="tools\release\" />
 		<file src="protobuf-distro\debug\bin\**\*" target="tools\debug\" />
+		<file src="cmake\build\debug\*\Debug\libproto*.pdb" target="lib\native\debug\" />
 	</files>
 </package>
