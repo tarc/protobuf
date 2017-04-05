@@ -32,9 +32,7 @@
 	</Link>
 </ItemDefinitionGroup>
 
-<Target Name="CompileProtocolBuffers" BeforeTargets="ClCompile" Inputs="@(ProtocolBuffer)" Outputs="@(ProtocolBuffer->'$(ProjectDir)$(ProtoOutPath)\%(FileName).pb.cc');@(ProtocolBuffer->'$(ProjectDir)$(ProtoOutPath)\%(FileName).pb.h')">
-
-	<Message Importance="High" Text="XUMBREGA: @(ProtocolBuffer->'$(ProjectDir)$(ProtoOutPath)\%(FileName).pb.cc')"/>
+<Target Name="CompileProtocolBuffers" BeforeTargets="ClCompile" Inputs="@(ProtocolBuffer)" Outputs="@(ProtocolBuffer->'$(ProjectDir)$(ProtoOutPath)\%(FileName).pb.cc');@(ProtocolBuffer->'$(ProjectDir)$(ProtoOutPath)\%(FileName).pb.h')" Label="CompileProtocolBuffers">
 
 	<MakeDir Directories="$(ProtoOutPath)" />
 
